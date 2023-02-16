@@ -1,0 +1,16 @@
+#numero1 = input("Introduce un número entero")
+#numero2 = input("Introduce otro número entero")
+#suma = int(numero1)+ int(numero2)
+#print(f'La variable suma es {suma}')
+#resta = int(numero1)- int(numero2)
+#print(f'La variable rest es {resta}')
+#multiplicacion = int(numero1) * int(numero2)
+#print(f'La variable multiplicación es {multiplicacion}')
+#division_entera = int(numero1) // int(numero2)
+#print(f'La variable división_entera es {division_entera}')
+#resto_division = int(numero1) % int(numero2)
+#print(f'La variable resto_division es {resto_division}')
+var_a = 10
+var_b = '10'
+resultado = (var_a == var_b)
+print(resultado)
