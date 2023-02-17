@@ -4,5 +4,5 @@ def es_par(num1: int):
    return not resultado
 
 
-numero1 = int(input("Introduce el numero"))
-print(f"El numero {numero1} es par?: {es_par(numero1)}")
+numero1 = int(input("Introduce el número"))
+print(f"El número {numero1} es par?: {es_par(numero1)}")
