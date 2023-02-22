@@ -13,23 +13,23 @@ def calcula_edad (mes, año):
         cumple = ("Aun no cumple años")
     # print(edad)
     # print("Ya cumplió años")
-    return (edad, cumple)
+    return (edad , cumple)
 
 
 day = int(input("Introduce el dia de tu nacimiento"))
 month = int(input("Introduce el mes de tu nacimiento"))
 year = int(input("Introduce el año de tu nacimiento"))
 
-if year > 1920 and year < 1939:
+if year >= 1920 and year < 1939:
     print("Generación silenciosa")
     print(f"La edad es:  {calcula_edad(month , year)}")
-elif year > 1940 and year < 1959:
+elif year >= 1940 and year < 1959:
     print("Baby boomers")
     print(f"La edad es:  {calcula_edad(month, year)}")
-elif year > 1960 and year < 1979:
+elif year >= 1960 and year < 1979:
     print("Generación X")
     print(f"La edad es:  {calcula_edad(month, year)}")
-elif year > 1980 and year < 1989:
+elif year >= 1980 and year < 1989:
     print("Generación Y")
     print(f"La edad es:  {calcula_edad(month, year)}")
 else:
