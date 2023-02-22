@@ -4,12 +4,12 @@ def calcula_edad (mes, año):
     today = datetime.date.today()
     current_year = today.year
     if (mes <= 2):
-        edad = (current_year- (año +1))
+        edad = (current_year- (año ))
         cumple = "Ya cumplió años"
     # nprint(edad)
     # print("Aun no cumple años")
     else:
-        edad = (current_year - año)
+        edad = (current_year - año -1)
         cumple = ("Aun no cumple años")
     # print(edad)
     # print("Ya cumplió años")
