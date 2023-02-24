@@ -24,6 +24,8 @@ print("*"*10)
 NUMERO_A = int(input("Ingresa un numero"))
 NUMERO_B = int(input("Ingresa otro numero"))
 
+#low_limit = min(numero_a, numero_b)
+#upper_limit = max(numero_a, numero_b)
 if NUMERO_A > NUMERO_B and (NUMERO_B+1 != NUMERO_A):
     NUMERO_B +=1
     while NUMERO_B < NUMERO_A:
@@ -46,11 +48,13 @@ print("*"*10)
 # este script será necesario utilizar la librería random y del comando input para ingresar el número por consola.
 
 import random
-numero = random.randint(0,10)
+MIN = 0
+MAX = 10
+numero = random.randint(MIN,MAX)
 print(numero)
 my_value = -1
 while my_value != numero:
-    my_value = int(input("Ingresa un numero entre 0 y 10"))
+    my_value = int(input(f"Ingresa un numero entre {MIN} y {MAX}"))
 
 
 print(f"{my_value} es el numero correcto")
