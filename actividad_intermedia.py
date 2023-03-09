@@ -12,16 +12,27 @@ def add_course(lst: list):
     status_list = " | ".join(STATUS)
     estado_add = input(f"Seleccione un status: {status_list}")
 
+    for st in STATUS:  # accedemos a cada elemento de la lista (en este caso cada elemento es un dictionario)
+        if estado_add == st:
+            nueva_entrada = {
+                "curso": curso,
+                "alumnos": alumnos,
+                "estado": estado_add,
+                "clases": clases
+            }
+            lst.append(nueva_entrada)
+            print(lst)
+            break
+        elif estado_add != st:
+            print("Curso no agregado: Status no valido")
+            print("Intente de nuevo")
+            break
+        else:
+            break
 
 
-    nueva_entrada = {
-        "curso": curso,
-        "alumnos": alumnos,
-        "estado": estado_add,
-        "clases": clases
-    }
-    lst.append(nueva_entrada)
-    print(lst)
+
+
 
 
 CURSOS = []#Es una lista de diccionarios
